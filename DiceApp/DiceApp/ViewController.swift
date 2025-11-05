@@ -13,13 +13,13 @@ class ViewController: UIViewController {
     
     @IBAction func rollButtonPressed(_ sender: UIButton) {
         let diceImages = [
-                    UIImage(named: "dice1"),
-                    UIImage(named: "dice2"),
-                    UIImage(named: "dice3"),
-                    UIImage(named: "dice4"),
-                    UIImage(named: "dice5"),
-                    UIImage(named: "dice6")
-                ]
+            UIImage(named: "dice1"),
+            UIImage(named: "dice2"),
+            UIImage(named: "dice3"),
+            UIImage(named: "dice4"),
+            UIImage(named: "dice5"),
+            UIImage(named: "dice6")
+        ]
         UIView.animate(withDuration: 0.2) {
             self.leftDiceImageView.transform = CGAffineTransform(rotationAngle: .pi)
             self.rightDiceImageView.transform = CGAffineTransform(rotationAngle: -.pi)
